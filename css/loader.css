@@ -126,17 +126,6 @@
 	animation-delay: calc(-1s * var(--i));
 }
 
-.fa-mountain {
-	position: absolute;
-	bottom: 0px;
-	font-size: 10em;
-	color: brown;
-	animation: animateClouds 15s linear infinite;
-	animation-delay: calc(-5s * var(--i));
-	z-index: 0;
-	display: none;
-}
-
 .is-active {
 	display: flex !important;
 }

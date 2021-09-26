@@ -134,6 +134,7 @@
 	animation: animateClouds 15s linear infinite;
 	animation-delay: calc(-5s * var(--i));
 	z-index: 0;
+	display: none;
 }
 
 .is-active {

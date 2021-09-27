@@ -13,8 +13,10 @@ function Jour() {
 	for (let i = 0; i < imgPNG.length; i++) {
 		imgPNG[i].classList.remove("imgThemeMode");
 	}
-	btnNuit.style.zIndex = "15";
-	btnJour.style.zIndex = "10";
+	btnNuit.style.zIndex = "50";
+	btnNuit.style.opacity = "1";
+	btnJour.style.zIndex = "45";
+	btnJour.style.opacity = "0";
 }
 function Nuit() {
 	/*Dark*/
@@ -25,8 +27,10 @@ function Nuit() {
 	for (let i = 0; i < imgPNG.length; i++) {
 		imgPNG[i].classList.add("imgThemeMode");
 	}
-	btnNuit.style.zIndex = "10";
-	btnJour.style.zIndex = "15";
+	btnNuit.style.zIndex = "45";
+	btnNuit.style.opacity = "0";
+	btnJour.style.zIndex = "50";
+	btnJour.style.opacity = "1";
 }
 
 function themeNuitJour() {

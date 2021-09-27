@@ -1,6 +1,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	min-height: 100vh;
 	background-color: var(--fond);
@@ -8,20 +9,71 @@ body {
 	transition: all 0.5s;
 }
 
+.title {
+	color: var(--ecriture);
+	z-index: 50;
+}
+.name {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+
 .btn-toggle {
-	position: absolute;
+	position: fixed;
 	top: 15px;
 	right: 15px;
 	cursor: pointer;
 	z-index: 10;
 	color: var(--ecriture);
 	padding: 5px;
-	border: double 2px var(--ecriture);
+	border: inset 2px var(--ecriture);
 	border-radius: 50%;
 }
+.hamburger1 {
+	z-index: 50;
+}
+.hamburger {
+	position: fixed;
+	top: 16px;
+	right: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.5s;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+.hamburger span {
+	height: 1px;
+	width: 20px;
+	background-color: var(--ecriture);
+	transition: 0.5s;
+}
+.hamburger span:nth-child(2) {
+	margin-top: 11px;
+}
+
+.cross1-active {
+	transform: rotate(45deg);
+}
+
+.cross2-active {
+	transform: rotate(-45deg);
+	margin-top: 0 !important;
+}
+.hamburger span {
+	height: 1px;
+	width: 20px;
+	background-color: var(--ecriture);
+	transition: 0.5s;
+}
+
 .container_own {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	display: flex;
 	justify-content: space-around;
@@ -31,10 +83,9 @@ body {
 
 .container_own .card_own {
 	position: relative;
-	width: 300px;
-	height: 200px;
+	width: 350px;
+	height: 250px;
 	margin: 20px;
-
 	cursor: pointer;
 }
 
@@ -92,4 +143,43 @@ body {
 
 .container_own .card_own:hover .face.face2 {
 	transform: translateY(0%) rotateX(0deg);
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	background: var(--box);
+	width: 100%;
+	height: 100vh;
+	z-index: 30;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-110vw);
+	transition: 0.5s;
+}
+
+.nav ul {
+	color: var(--ecriture);
+}
+
+.nav ul li {
+	padding: 5px 10px;
+	border-radius: 15px;
+	text-align: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.nav ul li:hover {
+	background: var(--ecriture);
+	color: var(--box);
+}
+
+.nav ul li:not(:nth-child(1)) {
+	margin-top: 35px;
+}
+
+.nav-active {
+	transform: translateX(0vw);
 }

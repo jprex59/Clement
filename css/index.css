@@ -1,6 +1,6 @@
 body {
 	min-height: 100vh;
-	background-color: #1e1e1e;
+	background-color: var(--fond);
 }
 .container_own {
 	width: 100%;
@@ -18,6 +18,7 @@ body {
 	height: 200px;
 	margin: 20px;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .container_own .card_own .face {
@@ -30,7 +31,7 @@ body {
 }
 
 .container_own .card_own .face.face1 {
-	background: #333;
+	background: var(--box);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,9 +43,13 @@ body {
 	max-width: 100px;
 }
 
+.imgThemeMode {
+	filter: invert(100%);
+}
+
 .container_own .card_own .face.face1 h3 {
 	margin: 10px 0 0;
-	color: #fff;
+	color: var(--ecriture);
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -55,13 +60,17 @@ body {
 }
 
 .container_own .card_own .face.face2 {
-	background: #fff;
+	background: var(--ecriture);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
 	transform-origin: top;
 	transform: translateY(100%) rotateX(90deg);
+}
+
+.content p {
+	color: var(--box);
 }
 
 .container_own .card_own:hover .face.face2 {

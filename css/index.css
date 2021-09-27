@@ -1,6 +1,23 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	min-height: 100vh;
 	background-color: var(--fond);
+	position: relative;
+	transition: all 0.5s;
+}
+
+.btn-toggle {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	z-index: 10;
+	color: var(--ecriture);
+	padding: 5px;
+	border: double 2px var(--ecriture);
+	border-radius: 50%;
 }
 .container_own {
 	width: 100%;
@@ -17,7 +34,7 @@ body {
 	width: 300px;
 	height: 200px;
 	margin: 20px;
-	border-radius: 5px;
+
 	cursor: pointer;
 }
 

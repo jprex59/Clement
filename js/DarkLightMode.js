@@ -1,4 +1,4 @@
-var imgPNG = document.querySelectorAll(".imgPNG");
+var imgPNG = document.querySelectorAll("img");
 const btnJour = document.querySelector(".btn-Jour");
 const btnNuit = document.querySelector(".btn-Nuit");
 

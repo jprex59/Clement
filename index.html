@@ -15,7 +15,7 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
-		<title>home</title>
+		<title>Mon portfolio</title>
 	</head>
 	<body>
 		<div class="pageloader">
@@ -41,7 +41,7 @@
 			</div>
 			<p class="title is-2 titleLoadingScreen">Chargement..</p>
 		</div>
-
+		<div class="top"></div>
 		<h1 class="title is-3 name">Clement</h1>
 
 		<div class="hamburger hamburger2"></div>
@@ -53,55 +53,92 @@
 
 		<div class="nav">
 			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
-				<li>Osef</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#cards">Experiences</a></li>
+				<li><a>Contact</a></li>
 			</ul>
 		</div>
 
-		<div class="section"></div>
-		<div class="container_own">
-			<div class="card_own box">
-				<div class="face face1">
-					<div class="content">
-						<img src="./img/sneakers.png" class="imgPNG" />
-						<h3 class="title is-3">Profil</h3>
-					</div>
+		<!--About-->
+
+		<div class="container block section is-medium" id="about">
+			<h4 class="title is-4 has-text-centered">About</h4>
+			<article class="message is-medium is-dark">
+				<div class="message-body">
+					Bonjour je m'appelle Clement Milard je suis actuellement en Terminal. Je fais un bac avec en spécialité Maths et SES. En première j'ai
+					également pris la spécialité Anglais.
+					<br \ />Je suis quelqu'un de determiné, ambitieux. <br />J'aimerais visé une école de commerce l'anne prochain je suis née le 17 septembre
 				</div>
-				<div class="face face2">
+			</article>
+		</div>
+		<!--Cards-->
+		<div class="container content-container section is-medium" id="cards">
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-96x96">
+						<img src="./img/license.png" alt="Placeholder image" />
+					</figure>
+				</div>
+				<div class="card-content">
 					<div class="content">
-						<p>dvvqs vsqd vqs qd qsd qsdvqsv qdv q vqd qvq</p>
+						<h4 class="title is-4 has-text-centered">Informations</h4>
+						18ans <br \ />
+						En train de passer le permis<br />
+						Banlieu parisienne
 					</div>
 				</div>
 			</div>
-			<div class="card_own box">
-				<div class="face face1">
-					<div class="content">
-						<img src="./img/money.png" class="imgPNG" />
-						<h3 class="title is-3">Profil</h3>
-					</div>
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-96x96">
+						<img src="./img/promotion.png" alt="Placeholder image" />
+					</figure>
 				</div>
-				<div class="face face2">
+				<div class="card-content">
 					<div class="content">
-						<p>dvvqsqdv q vqd qvqssssssss</p>
+						<h4 class="title is-4 has-text-centered">community manager</h4>
+						je suis community manager dans un groupe autour de la snkrs. Depuis plus de 1ans et demi je suis dans ce milieu. Mon rôle est de
+						m'occuper des réseaux pour une entreprise, je suis également là pour aide , et faire le rôle de support au prêt des clients/futurs
+						clients
+						<br />
 					</div>
 				</div>
 			</div>
-			<div class="card_own box">
-				<div class="face face1">
-					<div class="content">
-						<img src="./img/data.png" class="imgPNG" />
-						<h3 class="title is-3">Profil</h3>
-					</div>
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-96x96">
+						<img src="./img/graduation-hat.png" alt="Placeholder image" />
+					</figure>
 				</div>
-				<div class="face face2">
+				<div class="card-content">
 					<div class="content">
-						<p>dvvqs vsqd vqs qd qsd qsdvqsv qdv q vqd qvq</p>
+						<h4 class="title is-4 has-text-centered">Ecole/ objectif</h4>
+						je compte faire une école de commerce/communication mon expérience pro c’est la snkrs, l’investissement, la recherche Comme je l’ai dit
+						je suis community manager,
+						<br />
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container section">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.12179446057!2d2.206952164367434!3d48.85877000312214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1633510686324!5m2!1sfr!2sfr"
+				width="100%"
+				height="300"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
+		</div>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					Mon <strong>Portfolio</strong> développé par <a href="https://jprex59.github.io/monSiteInternet/">Jean Paris</a> <br \ />
+					&copy; 06/10/2021
+				</p>
+			</div>
+		</footer>
 		<script type="text/javascript" src="./js/loader.js"></script>
 		<script type="text/javascript" src="./js/DarkLightMode.js"></script>
 		<script type="text/javascript" src="./js/menu.js"></script>
